@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- JS dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap 4 dependency -->
+    <script src="https://unpkg.com/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- bootbox code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+    <script src="https://github.com/makeusabrew/bootbox/releases/download/v5.5.2/bootbox.locales.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="module">
+
+        import {insertar_al_inicio} from './lib/index.js';
+        import {insertar_al_final} from './lib/index.js';
+        import {insertar_antes_x} from './lib/index.js';
+        import {insertar_despues_x} from './lib/index.js';
+        import {elimina_inicio} from './lib/index.js';
+        import {eliminar_ultimo} from './lib/index.js';
+        import {eliminar_x} from './lib/index.js';
+        import {eliminar_antes_x} from './lib/index.js';
+        import {eliminar_despues_x} from './lib/index.js';
+      
+        window.insertar_al_inicio=insertar_al_inicio;
+        window.insertar_al_final=insertar_al_final;
+        window.insertar_antes_x=insertar_antes_x;
+        window.insertar_despues_x=insertar_despues_x;
+        window.elimina_inicio=elimina_inicio;
+        window.eliminar_ultimo=eliminar_ultimo;
+        window.eliminar_x=eliminar_x;
+        window.eliminar_antes_x=eliminar_antes_x;
+        window.eliminar_despues_x=eliminar_despues_x;
+
+    </script>
+
+</head>
+
+<body>
+    <h5 class="titulo">Curso: Estructura de Datos</h5>
+    <p1 class="parrafo1">Grupo 6 </p1>
+    </br>
+    <p2 class="parrafo2">Lista Simplemente Ligadas</p2>
+    
+<canvas id="tutorial" width="700" height="150"></canvas>
+<div id="salida"></div>
+    <div id="insertar">
+        <button class="boton uno" onclick="insertar_al_inicio()"><span>insertar al inicio</span></button>
+        <button class="boton dos" onclick="insertar_al_final()"><span>insertar al final</span></button>
+        <button class="boton tres" onclick="insertar_antes_x()"><span>insertar ante de X</span></button>
+        <button class="boton cuatro" onclick="insertar_despues_x()"><span>insertar despues de X</span></button>
+    </div>
+    
+    <div id="eliminar">
+        <button class="boton cinco" onclick="elimina_inicio()"><span>elimina inicio</span></button>
+        <button class="boton seis" onclick="eliminar_ultimo()"><span>eliminar el ultimo</span></button>
+        <button class="boton siete" onclick="eliminar_x()"><span>eliminar el X</span></button>
+        <button class="boton ocho" onclick="eliminar_antes_x()"><span>eliminar antes de X</span> </button>
+        <button class="boton nueve" onclick="eliminar_despues_x()"><span>eliminar despues de X</span></button>
+    </div>
+
+</body>
+
+</html>
